@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+// import 'package:flutter_grocery/pages/home_page/home_page.dart';
+// import 'package:flutter_blocks_app/pages/home_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,17 +9,12 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'My Grocery App',
-      theme: ThemeData(
-      
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
-     
+    return const MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: "SmartGrocer App"
+      // home: HomePage(),
     );
   }
 }
